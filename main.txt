@@ -125,4 +125,13 @@ Brand new file added to staging.
 6️⃣ Deleted file
     D notes.txt
 Deleted in working folder, not staged yet.
+----------------------------------------------x----------------------------------------------------
 
+🌿 1️⃣ Branch = Parallel Timeline
+
+🔹Create a New Branch :-
+    git branch <Branch Name>
+🔹View all existing Branches :-
+    git branch
+🔹Switch Between Branch :-
+    git switch <Branch Name> 
