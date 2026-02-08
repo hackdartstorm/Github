@@ -135,3 +135,5 @@ Deleted in working folder, not staged yet.
     git branch
 🔹Switch Between Branch :-
     git switch <Branch Name> 
+🔹Merge <Branch Name> into main :-
+    git merge <Branch Name>
