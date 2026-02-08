@@ -1,0 +1,62 @@
+1.Untracked Files :-
+ 👉 Git is basically saying:
+“I see this file in the folder, but you never told me to track it.”
+Move it to tracking:
+    git add notes.txt
+
+2.Modified (Not Staged) :-
+ 👉 Git is saying:
+“You changed this file, but you haven’t chosen to include the changes in the next snapshot.”
+Move it to staged:
+    git add notes.txt
+
+3️⃣ Staged — “Ready to be saved in the next commit” :-
+ 👉 Git is saying:
+“Cool, I’ll include this in the next version.”
+Save it permanently:
+    git commit -m "Update app logic"
+
+----------------------------------------------x----------------------------------------------------
+🧩 “Checkpoint” in Git = Commit
+
+
+✅ Set a checkpoint
+    git add .
+    git commit -m "Checkpoint: login feature working"
+That commit becomes a restore point you can return to anytime.
+
+
+You can see all checkpoints:
+    git log --oneline
+
+Example output:
+    a3f9c2d Add login validation
+    8b21e7a Checkpoint: login feature working
+    4d8a1ff Initial project setup
+Each line = one checkpoint.
+
+💣 git reset --hard (BIG hammer)
+This command says:
+    “Take me back to an old checkpoint and delete everything after it.”
+It resets:
+    Working folder 🧾
+    Staging area 📦
+    Commit history (after that point) 🕒
+🔥 Go back to a previous commit
+
+Steps-to-do :-
+1️⃣ Find the commit ID
+    git log --oneline
+    Copy the short code:
+    8b21e7a
+2️⃣ Reset to it
+    git reset --hard 8b21e7a
+Now your project looks exactly like it did at that commit.
+
+⚠️ Warning (serious)
+If you didn’t push the commits anywhere and you hard reset…
+    👉 Those commits are basically lost
+    👉 Git has no undo button (for beginners)
+So only use --hard when you’re sure.
+
+
