@@ -9,7 +9,7 @@ It turns a normal folder into a Git repository.
 Move it to tracking:
     git add notes.txt
 
-2.Modified (Not Staged) :-
+2.Modified (UnStaged) :-
  👉 Git is saying:
 “You changed this file, but you haven’t chosen to include the changes in the next snapshot.”
 Move it to staged:
@@ -28,6 +28,8 @@ Save it permanently:
 ✅ Set a checkpoint
     git add .
     git commit -m "Checkpoint: login feature working"
+
+"-m" means message
 That commit becomes a restore point you can return to anytime.
 
 
@@ -40,30 +42,31 @@ Example output:
     4d8a1ff Initial project setup
 Each line = one checkpoint.
 
-💣 git reset --hard (BIG hammer)
-This command says:
-    “Take me back to an old checkpoint and delete everything after it.”
-It resets:
-    Working folder 🧾
-    Staging area 📦
-    Commit history (after that point) 🕒
-🔥 Go back to a previous commit
 
-Steps-to-do :-
-1️⃣ Find the commit ID
-    git log --oneline
-    Copy the short code:
-    8b21e7a
-2️⃣ Reset to it
-    git reset --hard 8b21e7a
-Now your project looks exactly like it did at that commit.
+📝 Git Reset Notes :-
+    🔹 git reset --soft <commit>
+Use when: You only want to undo the commit, not the work.
+    ✔ HEAD moves back
+    ✔ Commit is undone
+    ✔ All changes stay STAGED
+    ✔ Nothing deleted
+👉 Meaning: “Undo the commit, keep everything ready to commit again.”
 
-⚠️ Warning (serious)
-If you didn’t push the commits anywhere and you hard reset…
-    👉 Those commits are basically lost
-    👉 Git has no undo button (for beginners)
-So only use --hard when you’re sure.
+🔹 git reset --mixed <commit> (default)
+Use when: You want to undo the commit and re-choose what to add.
+    ✔ HEAD moves back
+    ✔ Commit is undone
+    ✔ Files become MODIFIED (unstaged)
+    ✔ Nothing deleted
+👉 Meaning: “Undo the commit, but unstage the files so I can edit/select again.”
 
+🔹 git reset --hard <commit>
+Use when: You want to completely go back and erase everything after that point.
+    ✔ HEAD moves back
+    ❌ Staging area cleared
+    ❌ Working files reset
+    ❌ All changes after that commit deleted
+👉 Meaning: “Go back exactly to that version and delete all later work.”
 
 🪄 Magic recovery trick :-
 Run:
@@ -122,3 +125,4 @@ Brand new file added to staging.
 6️⃣ Deleted file
     D notes.txt
 Deleted in working folder, not staged yet.
+
