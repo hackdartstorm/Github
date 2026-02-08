@@ -1,3 +1,8 @@
+Ahh the birth of a repo moment 🐣✨ :-
+    git init means:
+“Start tracking this folder with Git.”
+It turns a normal folder into a Git repository.
+
 1.Untracked Files :-
  👉 Git is basically saying:
 “I see this file in the folder, but you never told me to track it.”
