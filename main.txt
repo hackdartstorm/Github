@@ -137,3 +137,7 @@ Deleted in working folder, not staged yet.
     git switch <Branch Name> 
 🔹Merge <Branch Name> into main :-
     git merge <Branch Name>
+🔹Delete <Branch Name> :-
+    git branch -d <Branch Name>
+🔹Create And Switch Branch :-
+    git switch -C <New Branch Name>
