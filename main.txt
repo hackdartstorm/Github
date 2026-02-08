@@ -141,3 +141,25 @@ Deleted in working folder, not staged yet.
     git branch -d <Branch Name>
 🔹Create And Switch Branch :-
     git switch -C <New Branch Name>
+
+📦 Git Stash :-
+Temporarily save your unfinished changes and clean your working folder
+“Hold this work for later.”
+    git stash
+What it saves:
+    Modified tracked files
+    Staged changes
+Your folder goes back to last commit state.
+
+🔄 git stash apply :-
+Bring back the saved changes, but keep the stash stored
+    git stash apply
+Your work returns… but the stash still exists
+    🎯 Apply a specific stash
+        git stash apply stash@{1}
+    🗑️ Delete stash manually
+        git stash drop stash@{0}
+    🗑️ Delete all:
+        git stash clear
+    ✔ Check stash list:
+        git stash list
