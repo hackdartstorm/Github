@@ -60,3 +60,13 @@ If you didn’t push the commits anywhere and you hard reset…
 So only use --hard when you’re sure.
 
 
+🪄 Magic recovery trick :-
+Run:
+    git reflog
+You’ll see something like:
+    f3a9c1d HEAD@{0}: reset: moving to B
+    9ab21e4 HEAD@{1}: commit: Safety checkpoint before experiment
+That second line is your lost commit!
+Bring it back:
+    git reset --hard 9ab21e4
+Boom 💥 checkpoint restored.
