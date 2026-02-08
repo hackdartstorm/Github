@@ -75,3 +75,50 @@ That second line is your lost commit!
 Bring it back:
     git reset --hard 9ab21e4
 Boom 💥 checkpoint restored.
+
+----------------------------------------------x----------------------------------------------------
+Git Status :-
+
+🧾 Normal git status (long & wordy)
+    modified:   notes.txt
+    untracked files:
+    notes.txt
+
+⚡ Short version
+    M notes.txt
+    ?? notes.txt
+
+🔣 Common Symbols Explained :-
+ Symbol    Where?	            Meaning
+    ??	Working folder	File exists but Git is not tracking it
+    M	Either column	File was modified
+    A	Staging area	File was added (new file staged)
+    D	Either column	File was deleted
+
+1️⃣ Untracked file
+    ?? notes.txt
+         Area	           Meaning
+    Working folder	    File exists
+    Staging area	    Git not tracking
+You haven’t run git add.
+
+2️⃣ Modified but NOT staged
+    M notes.txt
+You edited the file, but didn’t add it yet.
+
+3️⃣ Staged modification
+    M  notes.txt
+You ran git add notes.txt.
+Ready to commit.
+
+4️⃣ Staged, then edited again
+    MM notes.txt
+You staged one version… then changed it again.
+
+5️⃣ New file staged
+    A  notes.txt
+Brand new file added to staging.
+
+6️⃣ Deleted file
+    D notes.txt
+Deleted in working folder, not staged yet.
