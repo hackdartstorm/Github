@@ -1,6 +1,10 @@
-# Git Concepts & Commands 🚀
+# 🚀 Git & GitHub — A Beginner's Survival Guide
 
-Welcome to my personal cheat sheet for Git! This guide breaks down the complex world of version control into simple, bite-sized explanations.
+> Learn Git the fun way — with emojis, simple words, and zero confusion. 🎯
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 ---
 
