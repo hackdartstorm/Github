@@ -1,1 +1,2 @@
-ignore_these_please.py
+.DS_Store
+.vscode
