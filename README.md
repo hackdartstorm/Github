@@ -5,6 +5,14 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge)
+![Beginner Friendly](https://img.shields.io/badge/beginner--friendly-green?style=for-the-badge)
+
+<div align="center">
+
+[📚 Documentation](docs/) • [🤝 Contributing](CONTRIBUTING.md) • [📜 Code of Conduct](CODE_OF_CONDUCT.md) • [🐛 Report Issue](https://github.com/hackdartstorm/Github/issues)
+
+</div>
 
 ---
 
@@ -377,6 +385,34 @@ git stash list
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🌟 Community
+
+### 🤝 Contributing
+
+We welcome contributions from everyone! Whether it's fixing a typo, adding new content, or suggesting improvements — your help is appreciated.
+
+- 📖 Read our [Contributing Guide](CONTRIBUTING.md)
+- 🐛 Report bugs via [Issues](https://github.com/hackdartstorm/Github/issues)
+- 💡 Suggest features via [Issues](https://github.com/hackdartstorm/Github/issues)
+- 🔀 Submit [Pull Requests](https://github.com/hackdartstorm/Github/pulls)
+
+### 📢 Connect
+
+- 💬 Start a [Discussion](https://github.com/hackdartstorm/Github/discussions)
+- ⭐ Star this repo if you found it helpful!
+
+---
+
+## 🙏 Acknowledgments
+
+Thank you to all the contributors who help make this guide better for beginners everywhere!
+
+<a href="https://github.com/hackdartstorm/Github/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hackdartstorm/Github" alt="Contributors" />
+</a>
 
 ---
 
